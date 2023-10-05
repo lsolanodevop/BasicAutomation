@@ -1,2 +1,2 @@
-# LenioLabsTest
-Basic Repository configuration for Lenio Labs 
+# Basic
+Basic project configuration for anything
