@@ -5,7 +5,7 @@ Under api/ you'll find the client that creates the request and handle them
 Under utils/ you'll find the file for data management and the fixtures file
 I am using 3 POM's with the functions so it just has to be invoked in the test file
 Strong Points:
-- The Data is dinamyc
+- The Data is dinamic
 - It's pretty segmented so is easier to read
 - Has enough assertions to check that everything is working properly
   
