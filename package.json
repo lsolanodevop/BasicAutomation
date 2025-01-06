@@ -1,21 +1,21 @@
 {
-  "name": "leniolabstest",
+  "name": "basicautomation",
   "version": "1.0.0",
-  "description": "Basic Configuration for the Challenge",
+  "description": "Basic Configuration for Technical Challenges",
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lsolanodevop/LenioLabsTest.git"
+    "url": "git+https://github.com/lsolanodevop/BasicAutomation.git"
   },
   "author": "Leonardo Solano",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lsolanodevop/LenioLabsTest/issues"
+    "url": "https://github.com/lsolanodevop/BasicAutomation/issues"
   },
-  "homepage": "https://github.com/lsolanodevop/LenioLabsTest#readme",
+  "homepage": "https://github.com/lsolanodevop/BasicAutomation#readme",
   "devDependencies": {
     "@faker-js/faker": "^9.3.0",
     "@playwright/test": "^1.36.0",
