@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lsolanodevop/LenioLabsTest#readme",
   "devDependencies": {
+    "@faker-js/faker": "^9.3.0",
     "@playwright/test": "^1.36.0",
     "@types/node": "^20.4.1",
     "playwright": "^1.36.0"

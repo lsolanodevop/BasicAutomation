@@ -3,27 +3,23 @@ import Wrapper from "../base/Wrapper";
 
 export default class MainPage extends Wrapper {
 
-    readonly usernameInput: Locator; //locator('[data-test="username"]')
-    readonly passwordInput: Locator; //locator('[data-test="password"]')
-    readonly loginButton: Locator; //locator('[data-test="login-button"]')
-    readonly errorMessage: Locator; //locator('[data-test="error"]')
-    readonly productsCategory: Locator; //getByText('Products')
+    readonly dashboardButton: Locator; 
+    readonly contributionsButton: Locator; 
+    readonly categoryButton: Locator; 
 
     constructor(public page: Page){
         super(page);
-        this.usernameInput = this.page.locator('[data-test="username"]');
-        this.passwordInput = this.page.locator('[data-test="password"]');
-        this.loginButton = this.page.locator('[data-test="login-button"]');
-        this.productsCategory = this.page.getByText('Products');
+        this.dashboardButton = this.page.locator('a[href="#/dashboard"]');
+        this.contributionsButton = this.page.locator('a[href="#/contributions"]');
+        this.categoryButton = this.page.getByRole('link', { name: ' Tipos de Categorias' });
     }
 
-    async loginAsUser(username: string){
-        await this.usernameInput.fill(username);
-        await this.passwordInput.fill('secret_sauce');
-        await this.loginButton.click();
-        expect(await this.productsCategory.isVisible()).toBeTruthy();
-        const pageURL = await this.page.url();
-        expect(pageURL).toContain('inventory.html');
+    async checkUserIsLogged(){
+        return  this.page.url();
+    }
+
+    async switchToCategory(){
+        await this.categoryButton.click();
     }
 
 }
