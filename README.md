@@ -8,9 +8,11 @@ Strong Points:
 - The Data is dinamyc
 - It's pretty segmented so is easier to read
 - Has enough assertions to check that everything is working properly
+  
 Enhancements to be done:
 - A Better way to navigate to the last page of the categories
 - The only test could be separated in several functions or different tests
+
 To Execute:
 - Switch to the proper Branch "Qbika"
 - Do the npm install - update
